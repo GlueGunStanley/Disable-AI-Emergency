@@ -1,2 +1,2 @@
-# Disable-AI-Response
-Disables AI response to emergencies for police, fire, and ems.
+# Disable-AI-Emergency
+Disables AI response and spawning for police, fire, and ems.
