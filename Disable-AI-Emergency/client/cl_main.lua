@@ -7,8 +7,10 @@ Citizen.CreateThread(function()
     end
 end)
 
+local allow = Config.Settings.AllowStaticSpawning
+if allow then return end
 Citizen.CreateThread(function()
-    while not Config.Settings.AllowStaticSpawning do
+    while true do
         Wait(0)
         local coords = GetEntityCoords(PlayerPedId())
         ClearAreaOfCops(coords.x, coords.y, coords.z, 500.0)
